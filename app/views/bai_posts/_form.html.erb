@@ -1,0 +1,66 @@
+
+<div class="container-fluid">
+    <div class="row" style="margin:auto; border:1px solid black; padding-left:70px; display:block;">
+
+<%= form_for @bai_post, :html => {:multipart => true}  do |f| %>
+  <% if @bai_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bai_post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @bai_post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <div class="text_area" style="margin:auto; padding-left:70px; display:block;">
+    <%= f.label :"Tên Món Ăn" %>
+   <div style="width:100%; float:right"> <%= f.text_area :TenMonAn %></div>
+  </div>
+
+   <div class="field" style="margin:auto; padding-left:70px; display:block;">
+    <%= f.label :"Công Thức" %>
+   <div style="width:100%; float:right"><%= f.text_area :CongThucCheBien %></div>
+  </div>
+ <div class="field" style="margin:auto; padding-left:70px; display:block;">
+    <%= f.label :"Thành Phần" %>
+    <div style="width:100%; float:right"><%= f.text_area :ThanhPhan %></div>
+  </div>
+ <div class="field" style="margin:auto; padding-left:70px; display:block;">
+    <%= f.label :"Giá" %>
+   <div style="width:100%; float:right"> <%= f.text_area :Gia %></div>
+  </div>
+
+ <div class="field" style="margin:auto; padding-left:70px; display:block;">
+    <%= f.label :"Thời Gian Nấu" %>
+    <div style="width:100%; float:right"><%= f.text_area :ThoiGianNau %></div>
+  </div>
+ <div class="field" style="margin:auto; padding-left:70px; display:block;">
+    <%= f.label :"Hạn Sử Dụng" %>
+    <div style="width:100%; float:right"><%= f.text_area :HanSuDung %></div>
+  </div>
+ 
+
+ <div class="field" style="margin:auto; padding-left:70px; display:block;">
+    <%= f.label :"Thông Tin Phụ" %>
+   <div style="width:100%; float:right"> <%= f.text_area :ThongTinPhu %></div>
+  </div>
+ <div class="field" style="margin:auto; padding-left:70px; display:block;">
+    <%= f.label :"Địa Chỉ Người Bán" %>
+   <div style="width:100%; float:right"> <%= f.text_area :DiaChiNguoiBan %></div>
+  </div>
+ <div class ="field" style="margin:auto; padding-left:70px; display:block;">
+ <br />
+ <label>Chọn hình ảnh cho món ăn!</label>
+ <div style="width:100%; float:right">  <%=f.file_field  :foodimage  %></div>
+  </div>
+<br>
+<br>
+
+  <div class="actions" style="margin:auto; padding-left:70px; display:block;">
+    <h2 ><%= f.submit "Đăng Bài",class: "btn btn-primary btn-lg" %><h2>
+  </div>
+<% end %>
+</div>
+</div>

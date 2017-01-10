@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bai_post: one
+  member: one
+  ThoiGianDanhGia: 
+  SoSao: 1
+
+two:
+  bai_post: two
+  member: two
+  ThoiGianDanhGia: 
+  SoSao: 1

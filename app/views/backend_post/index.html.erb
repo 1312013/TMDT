@@ -1,0 +1,42 @@
+<div id="wrapper">
+
+        <!-- Navigation -->
+    <%= render "admins/share/navbar" %>
+
+        <!-- Page Content -->
+     <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Danh sách bài đăng</h1>
+                </div>
+                    <!-- /.col-lg-12 -->
+            </div>
+                <!-- /.row -->
+        </div>
+            <!-- /.container-fluid -->
+		
+        <table class="table table-striped">
+	    <tr>
+	    	<th><b>ID</b></th>
+	        <th><b>Người đăng</b></th>
+	        <th><b>Tiêu đề</b></th>
+	        <th><b>Thông tin</b></th>
+	        <th></th>
+	    </tr>
+	                
+	    <% if @posts.each do |post| %>
+	    <tr>
+	    	<th><%= post.id %></th>
+	        <th><%= post.member_id %></th>
+	        <th><%= post.TenMonAn %></th>
+	        <th><%= link_to "See more", backend_post_path(post.id) %></th>
+	        <th><%= link_to '/backend_post/destroy', :id => post.id, :confirm => "Hủy bài đăng này?" do %>
+	        	<i class="fa fa-trash" aria-hidden="true"></i><% end %>
+	        </th>
+	        </tr>
+	    <% end %>
+    </div>
+        <!-- /#page-wrapper -->
+</div>
+<% end %>

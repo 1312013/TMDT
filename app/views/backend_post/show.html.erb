@@ -1,0 +1,20 @@
+<div id="wrapper">
+
+        <!-- Navigation -->
+    <%= render "admins/share/navbar" %>
+
+        <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <h1><%= @post.TenMonAn %></h1>
+            <h5><%= @post.ThanhPhan %></h5>
+            <h5><%= @post.Gia %></h5>
+            <h5><%= @post.ThoiGianPhucVu %></h5>
+                <!-- /.row -->
+        </div>
+        <%= link_to "Quay lại", { :controller => 'backend_post', :action => 'index' } %>
+            <!-- /.container-fluid -->
+    </div>
+        <!-- /#page-wrapper -->
+
+</div>

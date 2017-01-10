@@ -1,0 +1,71 @@
+<div class="wrap">
+<%= render "layouts/nav" %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tên Món Ăn:</strong>
+  <%= @bai_post.TenMonAn %>
+</p>
+<p>
+  <strong>Công Thức Chế Biến:</strong>
+  <%= @bai_post.CongThucCheBien %>
+</p>
+
+<p>
+  <strong>Thành Phần:</strong>
+  <%= @bai_post.ThanhPhan %>
+</p>
+
+<p>
+  <strong>Giá:</strong>
+  <%= @bai_post.Gia %>
+</p>
+ <%# 
+ <p>
+  <strong>Thời Gian Phục Vụ:</strong>
+  <%= @bai_post.ThoiGianPhucVu %>
+<%#</p>%>
+ <p>
+  <strong>Thời Gian Nấu:</strong>
+  <%= @bai_post.ThoiGianNau %>
+</p>
+ <p>
+  <strong>Hạn Sử Dụng:</strong>
+  <%= @bai_post.HanSuDung %>
+</p>
+<%# 
+<p>
+  <strong>Thời Gian Dùng Món:</strong>
+  <%= @bai_post.ThoiGianDungMon %>
+<%#</p>%>
+
+
+<p>
+  <strong>Thông Tin Phụ:</strong>
+  <%= @bai_post.ThongTinPhu %>
+</p>
+
+<p>
+  <strong>Địa Chỉ Người bán:</strong>
+  <%= @bai_post.DiaChiNguoiBan %>
+</p>
+
+<p>
+  <strong>Trạng Thái:</strong>
+  <%= @bai_post.TrangThai %>
+</p>
+<p>
+<center>
+ 
+ <td> <%= image_tag (@bai_post.foodimage_url.to_s) %></td>
+  </center>
+ </p>
+  
+<center>
+<%= link_to 'Sửa Bài Viết', edit_bai_post_path(@bai_post) %> |
+<%= link_to 'Xóa Bài Viết', @bai_post, method: :delete, data: { confirm: 'Are you sure?' } %>|
+<%= link_to 'Trở Lại', bai_posts_path %>
+</br>
+<class="btn-social"><a class="js-social-share facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%= yield :url %>" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+</center>
+</div>

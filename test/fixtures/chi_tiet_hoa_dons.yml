@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hoa_don: one
+  ThoiGianNhanHang: 
+  SoLuong: 1
+  ThanhTien: 
+
+two:
+  hoa_don: two
+  ThoiGianNhanHang: 
+  SoLuong: 1
+  ThanhTien: 

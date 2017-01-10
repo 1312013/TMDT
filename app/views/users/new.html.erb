@@ -1,0 +1,20 @@
+
+
+<%= form_for :user, url: '/users' do |f| %>
+<div class="container">
+<h1 >Sign Up </h1>
+<div class="form-group">
+  Name: <%= f.text_field :name , class: 'form-control'  %>
+  Email: <%= f.text_field :email , class: 'form-control' %>
+  Phone: <%= f.text_field :SDT , class: 'form-control' %>
+  Address: <%= f.text_field :address , class: 'form-control' %>
+  Password: <%= f.password_field :password , class: 'form-control' %>
+  Password Confirmation: <%= f.password_field :password_confirmation , class: 'form-control'  %>
+  <%= f.submit "Sign Up", class: "btn btn-primary" %>
+  
+  <%= link_to "/", class: "btn btn-primary" do %>
+   			<span></span> Home
+		<% end %>
+</div>
+</div>
+<% end %>

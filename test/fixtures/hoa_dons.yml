@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  member: one
+  member: one
+  NgayDatHang: 2016-11-06 16:09:27
+  DiaChiNguoiBan: MyString
+  DiaChiNguoiMua: MyString
+  TongTien: 
+
+two:
+  member: two
+  member: two
+  NgayDatHang: 2016-11-06 16:09:27
+  DiaChiNguoiBan: MyString
+  DiaChiNguoiMua: MyString
+  TongTien: 

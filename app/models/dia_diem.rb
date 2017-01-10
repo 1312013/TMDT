@@ -1,0 +1,2 @@
+class DiaDiem < ApplicationRecord
+end

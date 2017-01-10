@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<head>
+<title>Free Smart Store Website Template | Home :: w3layouts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+  $(document).ready(function($){
+    $('#dc_mega-menu-orange').dcMegaMenu({rowItems:'4',speed:'fast',effect:'fade'});
+  });
+</script>
+</head>
+<body>
+  <div class="wrap">
+	 <%= render 'layouts/nav' %>
+	 <div class="header_bottom">
+		<div class="header_bottom_left">
+		
+			<div class="section group">
+			<% for post in @bai_posts %>
+			<% if post.id == 1 %>
+				<div class="listview_1_of_2 images_1_of_2">
+					<div class="listimg listimg_2_of_1">
+						 <a href="preview.html"> <%= image_tag((post.foodimage_url.to_s) , alt:"" ,:width => "100", :height => "100")%></a>
+					</div>
+			
+				    <div class="text list_2_of_1">
+						<h2><% post.TenMonAn %></h2>
+						<p></p>
+						<div class="button"><span><a href="preview.html">Add to cart</a></span></div>
+				   </div>
+			
+			   </div>	
+			   <% end %>	
+			   <% if post.id == 2 %>	
+				<div class="listview_1_of_2 images_1_of_2">
+					<div class="listimg listimg_2_of_1">
+						  <a href="preview-5.html"><%= image_tag(post.foodimage_url.to_s, alt:"" ,:width => "100", :height => "100")%></a>
+					</div>
+					<div class="text list_2_of_1">
+						  <h2><% post.TenMonAn %></h2>
+						  <p></p>
+						  <div class="button"><span><a href="preview-5.html">Add to cart</a></span></div>
+					</div>
+				</div>
+				<% end %>
+				<% end %>
+			</div>
+			<div class="section group">
+			<% for post in @bai_posts %>
+			<% if post.id == 3 %>
+				<div class="listview_1_of_2 images_1_of_2">
+					<div class="listimg listimg_2_of_1">
+						 <a href="preview-3.html"> <%= image_tag(post.foodimage_url.to_s, alt:"",:width => "100", :height => "110" )%></a>
+					</div>
+				    <div class="text list_2_of_1">
+						<h2><% post.TenMonAn %></h2>
+						<p></p>
+						<div class="button"><span><a href="preview-3.html">Add to cart</a></span></div>
+				   </div>
+			   </div>
+			   <% end %>
+			   <% if post.id == 4 %>			
+				<div class="listview_1_of_2 images_1_of_2">
+					<div class="listimg listimg_2_of_1">
+						  <a href="preview-6.html"><%= image_tag(post.foodimage_url.to_s, alt:"" ,:width => "100", :height => "100")%></a>
+					</div>
+					<div class="text list_2_of_1">
+						  <h2><% post.TenMonAn %></h2>
+						  <p></p>
+						  <div class="button"><span><a href="preview-6.html">Add to cart</a></span></div>
+					</div>
+				</div>
+				<% end %>
+				<% end %>
+			</div>
+			<%# end %> 
+		  <div class="clear"></div>
+		</div>
+			 <div class="header_bottom_right_images">
+		   <!-- FlexSlider -->
+              <section class="slider">
+				  <div class="flexslider">
+					<ul class="slides">
+						<li><%= image_tag("1.jpg", alt:"" )%></li>
+						<li><%= image_tag("2.jpg", alt:"" )%></li>
+						<li><%= image_tag("3.jpg", alt:"" )%></li>
+						<li><%= image_tag("4.jpg", alt:"" )%></li>
+				    </ul>
+				  </div>
+	      </section>
+<!-- FlexSlider -->
+	    </div>
+
+	  <div class="clear"></div>
+  </div>	
+</div>
+ 
+	
+</body>
+</html>
+

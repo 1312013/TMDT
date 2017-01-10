@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  member: one
+  TenMonAn: MyString
+  CongThucCheBien: MyString
+  ThanhPhan: MyString
+  Gia: 
+  ThoiGianPhucVu: MyString
+  ThoiGianNau: MyString
+  HanSuDung: MyString
+  ThoiGianDungMon: MyString
+  TheLoai1: MyString
+  TheLoai2: MyString
+  TheLoai3: MyString
+  ThongTinPhu: MyString
+  DiaChiNguoiBan: MyString
+  TrangThai: MyString
+  Hinh1: 
+  Hinh2: 
+  Hinh3: 
+
+two:
+  member: two
+  TenMonAn: MyString
+  CongThucCheBien: MyString
+  ThanhPhan: MyString
+  Gia: 
+  ThoiGianPhucVu: MyString
+  ThoiGianNau: MyString
+  HanSuDung: MyString
+  ThoiGianDungMon: MyString
+  TheLoai1: MyString
+  TheLoai2: MyString
+  TheLoai3: MyString
+  ThongTinPhu: MyString
+  DiaChiNguoiBan: MyString
+  TrangThai: MyString
+  Hinh1: 
+  Hinh2: 
+  Hinh3: 

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  HoTen: MyString
+  Password: MyString
+  DiaChi1: MyString
+  DiaChi2: MyString
+  Diachi3: MyString
+  Email: MyString
+  SoDT: MyString
+  LoaiMXH: MyString
+  SoMonAnCoTheNauTrongNgay: 
+
+two:
+  HoTen: MyString
+  Password: MyString
+  DiaChi1: MyString
+  DiaChi2: MyString
+  Diachi3: MyString
+  Email: MyString
+  SoDT: MyString
+  LoaiMXH: MyString
+  SoMonAnCoTheNauTrongNgay: 
